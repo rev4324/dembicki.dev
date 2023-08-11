@@ -1,4 +1,4 @@
-const colors = require('@radix-ui/colors')
+const colors = require("@radix-ui/colors");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,8 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-		...colors
-	  },
+        ...colors,
+      },
+      fontFamily: {
+        sans: ["Manrope"],
+      },
     },
   },
   plugins: [],

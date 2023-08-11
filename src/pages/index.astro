@@ -1,13 +1,60 @@
 ---
+import SocialsSection from "../components/SocialsSection.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Filip Dembicki">
-  <main class="flex items-center justify-center w-full h-screen">
-    <div class="border p-4 rounded-lg border-tomato-tomato10 bg-tomato-tomato11 shadow">
-      <h1 class="font-medium text-5xl text-tomato-tomato3 tracking-tight">
-        🚧 WIP 🚧
+  <main class="mt-10 w-full max-w-prose mx-auto">
+    <div class="w-full flex">
+      <h1
+        class="text-amber-amber7 bg-amber-amber12 inline-flex mx-auto text-center text-2xl px-2 py-1 ring-1 ring-amber-amber10/20 rounded font-medium tracking-tight font-mono"
+      >
+        Filip Dembicki
       </h1>
     </div>
+    <section class="mt-8 text-lg mx-auto">
+      <p class="text-2xl mb-6 font-medium">Hello there! 👋</p>
+
+      <p class="block">
+        I'm Filip, a (mostly) frontend developer from Poland. I'm currently
+        working&nbsp;at
+        <a
+          href="https://exea.pl/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-amber-amber7 hover:text-amber-amber8"
+        >
+          Exea
+        </a>
+         as a&nbsp;Junior Developer. I'm also a&nbsp;student at the
+        <a
+          href="https://www.ncu.eu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-amber-amber7 hover:text-amber-amber8"
+        >
+          Nicolaus Copernicus University in Toruń
+        </a> where I study CS.
+      </p>
+
+      <p class="mt-3">
+        I enjoy using and creating great UI/UX interfaces and constantly
+        exploring new technologies and programming languages, all while
+        listening to a lot of music. 🎧
+      </p>
+
+      <p class="mt-3">
+        Nowadays I'm mostly working with <span
+          class="font-medium text-indigo-indigo5">TypeScript</span
+        >, <span class="font-medium text-green-green5">Vue</span>, <span
+          class="font-medium text-sky-100">Tailwind CSS</span
+        > and <span class="font-medium text-red-red5">Laravel</span>. I'm
+        currently learning
+
+        <span class="font-medium text-cyan-cyan5">Go</span> in my free time.
+      </p>
+    </section>
+
+    <SocialsSection />
   </main>
 </Layout>
