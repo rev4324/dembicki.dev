@@ -1,6 +1,7 @@
 {
   "name": "dembicki.dev",
   "type": "module",
+  "license": "MIT",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
@@ -11,5 +12,8 @@
   },
   "dependencies": {
     "astro": "^2.10.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1"
   }
 }
