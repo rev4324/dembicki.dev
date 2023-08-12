@@ -9,7 +9,23 @@ module.exports = {
         ...colors,
       },
       fontFamily: {
-        sans: ["Manrope"],
+        sans: [
+          "Manrope",
+          ...require("tailwindcss/defaultTheme").fontFamily.sans,
+        ],
+        mono: [
+          "IBM Plex Mono",
+          ...require("tailwindcss/defaultTheme").fontFamily.mono,
+        ],
+      },
+      animation: {
+        blink: "blink 2s step-end infinite",
+      },
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0 },
+        },
       },
     },
   },
