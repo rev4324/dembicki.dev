@@ -1,4 +1,7 @@
 ---
+import "@fontsource-variable/manrope";
+import "@fontsource/ibm-plex-mono";
+import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
 }
@@ -14,16 +17,11 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="text-mauveDark-mauve12 bg-mauveDark-mauve1">
     <div class="w-full max-w-screen-xl mx-auto px-6 py-4">
       <slot />
+      <Footer />
     </div>
   </body>
 </html>

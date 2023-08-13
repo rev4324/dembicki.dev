@@ -10,7 +10,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          "Manrope",
+          "Manrope Variable",
           ...require("tailwindcss/defaultTheme").fontFamily.sans,
         ],
         mono: [
